@@ -86,15 +86,13 @@ spec:
       name: http-podinfo
       protocol: HTTP
     hosts:
-    - "*"
-    # - podinfo.myexample.dev
+    - podinfo.myexample.dev
   - port:
       number: 443
       name: https-podinfo
       protocol: HTTPS
     hosts:
-    - "*"
-    # - podinfo.myexample.dev
+    - podinfo.myexample.dev
     tls:
       credentialName: ingress-cert-staging
       mode: SIMPLE
